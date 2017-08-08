@@ -1,0 +1,6 @@
+import csv
+with open('UA_Data_modified.csv') as csvfile:
+    ua = csv.reader(csvfile, deliniter = ' ', quotechar = '|')
+    for row in ua:
+        print', '.join(row)
+
